@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQUERY</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<style>
+
+body{
+	width: 60%;
+	margin:0 auto;
+	font-family: "Comic Sans MS";
+}
+
+p{
+ 	padding-top: .8em;
+}
+
+.col-xs-4{
+	height: 300px;
+	background-color: lightblue;
+	background-size: 100% 100%;
+	border: solid white 10px;
+	text-align: center;
+	font-size: 2em;
+}
+
+.kaboom{
+	background: url("http://mashable.com/wp-content/uploads/2013/07/excited-baby.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.aBox{
+	background: url("https://45.media.tumblr.com/70c28e54bf34c5e5c633c2e085338aa0/tumblr_moekwjCyNq1s49x9io1_250.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+
+
+.bBox{
+	background: url("https://media.giphy.com/media/WRecJ4REA1kKk/giphy.gif")
+}
+
+.cBox{
+	background: url("http://vignette4.wikia.nocookie.net/pffanon/images/1/1c/Scared-gif.gif/revision/latest?cb=20131231001147");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+
+}
+
+.dBox{
+	background: url("https://media.giphy.com/media/wVcNP3TnXbl84/giphy.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+
+.fBox{
+	background: url("http://i79.photobucket.com/albums/j139/zee1116/raven-scared-gif.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+
+</style>
+
+</head>
+<body>
+
+	<div id="row2" class="row">
+		<div id="aBox" class="col-xs-4">
+			<p>sadness</p>
+		</div>
+		<div id="bBox" class="col-xs-4">
+			<p>confusion</p>
+		</div>
+		<div id="cBox" class="col-xs-4">
+			<p>shocked</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div id="dBox" class="col-xs-4">
+			<p>anger</p>
+		</div>
+
+		<div id="eBox" class="col-xs-4">
+			<p>happy</p>
+		</div>
+
+		<div id="fBox" class="col-xs-4">
+			<p>worried</p>
+		</div>
+
+	</div>
+
+
+	<div class="row">
+		<div class="col-xs-4">
+			<p>gif coming soon</p>
+		</div>
+		<div class="col-xs-4">
+			<p>gif coming soon</p>
+		</div>
+		<div class="col-xs-4">
+			<p>gif coming soon</p>
+		</div>
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+
+		$("#aBox").hover(
+			// hover on
+			function(){
+				$(this).addClass("aBox");
+				console.log('a');
+			},
+
+			// hover off
+			function(){
+				console.log('b');
+				$(this).removeClass("aBox");
+		});
+
+
+		$("#bBox").hover(
+			// hover on
+			function(){
+				$(this).addClass("bBox");
+				console.log('a');
+			},
+
+			// hover off
+			function(){
+				console.log('b');
+				$(this).removeClass("bBox");
+		});
+
+
+		$("#cBox").hover(
+			// hover on
+			function(){
+				$(this).addClass("cBox");
+				console.log('a');
+			},
+
+			// hover off
+			function(){
+				console.log('b');
+				$(this).removeClass("cBox");
+			});
+
+
+		$("#dBox").hover(
+			// hover on
+			function(){
+				$(this).addClass("dBox");
+				console.log('a');
+			},
+
+			// hover off
+			function(){
+				console.log('b');
+				$(this).removeClass("dBox");
+			});
+
+
+		$("#eBox").hover(
+			// hover on
+			function(){
+				$(this).addClass("kaboom");
+				console.log('a');
+			},
+
+			// hover off
+			function(){
+				console.log('b');
+				$(this).removeClass("kaboom");
+			});
+
+		$("#fBox").hover(
+			// hover on
+			function(){
+				$(this).addClass("fBox");
+				console.log('a');
+			},
+
+			// hover off
+			function(){
+				console.log('b');
+				$(this).removeClass("fBox");
+			});
+
+		// $("#bBox").click(function(){
+		// 	$("#row2").slideUp(1000);
+		// });
+
+		// $("#bBox").hide(2000).show(1000)
+		// $("#cBox").fadeOut(1000).fadeIn(9000);
+		// $("#aBox").fadeOut(1000).fadeIn(9000);
+
+	});
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
